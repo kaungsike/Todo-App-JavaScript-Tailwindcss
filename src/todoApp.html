@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo App</title>
+        <link rel="stylesheet" href="./output.css">
+        <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    </head>
+    <body class="w-screen h-screen">
+        <main id="app">
+            <section id="container"
+                class="border bg-teal-200 border-teal-400 w-[500px] mx-auto mt-10 p-10">
+                <h1 class="text-teal-800 text-4xl mb-7">Create Your List</h1>
+                <div class="w-full h-[60px] flex">
+                    <input type="text" id="textInput"
+                        class="flex-grow outline-none px-3 border border-teal-400">
+                    <button
+                        class="h-full w-[60px] bg-teal-900 flex justify-center items-center text-teal-200 border-none"
+                        id="addBtn"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex justify-between items-center mt-8 mb-9">
+                    <p class="text-lg text-teal-800">Your List</p>
+                    <p
+                        class="text-lg bg-teal-800 rounded-3xl px-3 py-1 text-teal-200">Done
+                        ( <span id="doneCount">0</span> / <span
+                            id="totalCount">0</span> )</p>
+                </div>
+                <div id="listGroup" class="w-full h-full">
+
+                    <!--list  -->
+                    <!-- <div class="list border group border-teal-400 w-full h-[65px] flex justify-between items-center px-3 text-teal-800 overflow-hidden hover:scale-105 duration-200 mb-2">
+                        <aside class="flex items-center h-full gap-2">
+                            <input type="checkbox" name="check-box"
+                                id="check-box"
+                                class="list-check-box w-4 h-4 accent-teal-200 outline-none border border-teal-400">
+                            <label for="check-box">Apple</label>
+                        </aside>
+                        <aside
+                            class="h-full flex items-center gap-2 translate-x-[115%] group-hover:translate-x-[5%] duration-300">
+                            <button
+                                class="border border-teal-400 w-[50px] h-[50px] flex items-center justify-center active:scale-90">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6 pointer-events-none">
+                                    <path fill-rule="evenodd"
+                                        d="M4.25 12a.75.75 0 0 1 .75-.75h14a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button
+                                class="border border-teal-400 w-[50px] h-[50px] flex items-center justify-center active:scale-90">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6 pointer-events-none">
+                                    <path
+                                        d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z" />
+                                    <path
+                                        d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z" />
+                                </svg>
+                            </button>
+                        </aside>
+                    </div> -->
+                    
+                    
+                    <div class="hidden flex-col items-center gap-2 first:flex">
+                        <img class="w-[300px]"
+                            src="./undraw_selection_re_ycpo.svg" alt>
+                        <p>There is no list</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
